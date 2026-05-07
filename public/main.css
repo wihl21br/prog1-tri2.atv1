@@ -1,0 +1,10 @@
+h1{
+    color: blue;
+    border-color: aqua;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 20px;
+    font-size: 30px;
+}
+input{
+    background-color: purple;
+}
