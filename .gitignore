@@ -1,3 +1,6 @@
+.install
+.vscode
+
 # dependencies (bun install)
 node_modules
 

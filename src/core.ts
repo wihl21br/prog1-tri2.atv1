@@ -1,5 +1,5 @@
 class Item {
-  constructor(public item: string) { }
+  constructor(public title: string) { }
 }
 class TodoList {
   private items: Item[] = [];
@@ -26,6 +26,10 @@ private async readListFromDisk(){
     })
 }
   async addItem(item: Item) {
+    if(!item)
+      throw 'Item nao pode ser nulo ou indefinido'
+    if(!item.title.trim()|| !item.title)
+      throw 'Item title nao pode ser nulo ou indefinido'
     this.items.push(item)
     await this.saveListToDisk()
   }
@@ -44,3 +48,6 @@ async removeItem(index: number) {
   }
 }
 const lista = new TodoList('arquivo.json')
+
+export default TodoList;
+export {Item, TodoList}
