@@ -1,3 +1,6 @@
+import fileIxndex from "./public/index.html";
+import fileJs from "./public/main.js";
+
 const server = Bun.serve({
   routes: {
   },
