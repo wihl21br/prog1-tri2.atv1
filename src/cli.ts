@@ -48,4 +48,11 @@ if (command === "remove") {
     console.log("item removido com sucesso: ", index)
     process.exit(0)
 }
+if (command === "update") {
+    const indexSTR = params[3]
+    const newValue = params[4]
+    await todoList.update(parseInt(indexSTR), new Item(newValue))
+    console.log("item atualizado com sucesso: ", indexSTR, newValue)
+    process.exit(0)
+}
 console.log("não entrou em if nenhum")

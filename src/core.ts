@@ -1,4 +1,11 @@
 ///
+/**
+ * @todo
+ * known issues:
+ * - getItems needs to await loadListFromDisk()
+ */
+
+
 class Item {
   constructor(public title: string) { }
 }
