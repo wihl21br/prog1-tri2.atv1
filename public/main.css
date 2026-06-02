@@ -2,9 +2,13 @@ h1{
     color: blue;
     border-color: aqua;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    font-weight: 20px;
-    font-size: 30px;
+    background-color: rgba(0, 4, 231, 0.295);
 }
-input{
-    background-color: purple;
+body{
+    background-color: rgba(185, 7, 7, 0.192);
+}
+div{
+    background-color: rgb(117, 94, 94);
+    border-color: rgb(0, 0, 0);
+    font-family: 'Courier New', Courier, monospace;
 }
