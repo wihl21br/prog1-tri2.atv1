@@ -70,6 +70,8 @@ if (command === "update") {
     await todoList.updateItem(index, new Item(valor_novo))
     console.log("item no index ",index," atualizado com sucesso para: ", valor_novo)
     process.exit(0)
+
+
 }
 
 if (command)
